@@ -5,7 +5,6 @@ export default function Resume() {
   return (
     <section className="container" style={{ padding: "60px 0" }}>
       <motion.div
-        className="card"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -35,7 +34,7 @@ export default function Resume() {
           A quick glance at my journey.
         </motion.p>
 
-        {/* Profile Header */}
+        {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -43,7 +42,6 @@ export default function Resume() {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            alignItems: "flex-start",
             flexWrap: "wrap",
             gap: 20,
             background: "rgba(255,255,255,0.03)",
@@ -53,16 +51,22 @@ export default function Resume() {
         >
           <div>
             <h3 style={{ fontSize: 24, color: "#00b4ff", marginBottom: 4 }}>
-              👨‍💻 KUNJ D. DESAI
+              👨‍💻 Mohit Agrawal
             </h3>
-            <p style={{ margintop: 10, fontSize: 15, color: "#ccc" }}>
-              4th Year B.Tech — AI & Data Science | S.C.E.T, Sarvajanik University
+            <p style={{ fontSize: 15, color: "#ccc" }}>
+              B.Tech CSE — Lovely Professional University
             </p>
-            <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
-              📍 Jahangirpura, Surat, Gujarat
+            <p style={{ marginTop: 4, fontSize: 14, color: "#aaa" }}>
+              📍 Punjab, India
             </p>
-            <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
-              ✉️ kunjd2803@gmail.com | 📞 +91 8758209508
+            <p style={{ marginTop: 4, fontSize: 14, color: "#aaa" }}>
+              ✉️ mohitagrawal250205@gmail.com | 📞 +91 6377291643
+            </p>
+            <p style={{ marginTop: 4, fontSize: 14, color: "#aaa" }}>
+              🔗 LinkedIn: linkedin.com/in/mohitagrawalcse  
+            </p>
+            <p style={{ marginTop: 4, fontSize: 14, color: "#aaa" }}>
+              🔗 GitHub: github.com/Gadgetechno
             </p>
           </div>
 
@@ -80,15 +84,15 @@ export default function Resume() {
           >
             <strong style={{ color: "#00b4ff" }}>Professional Summary:</strong>
             <p style={{ marginTop: 6, color: "#ccc" }}>
-              4th-year B.Tech AI student experienced in ML, DL, and computer vision.
-              Skilled in Python, TensorFlow, PyTorch, and Scikit-learn. Passionate about
-              building impactful AI systems and seeking opportunities to contribute to
-              real-world AI projects.
+              Dedicated Computer Science student with strong skills in Python, C++, SQL,
+              machine learning fundamentals, data preprocessing, visualization, and
+              predictive modeling. Experienced working with real-time data pipelines,
+              dashboards, and ML workflows through internship experience and academic projects.
             </p>
           </motion.div>
         </motion.div>
 
-        {/* Education Section with Border Box */}
+        {/* SKILLS */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -102,129 +106,152 @@ export default function Resume() {
           }}
         >
           <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
-            🎓 Education
+            ⚙️ Skills
           </h4>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
-            <li>
-              <strong>B.Tech in Artificial Intelligence & Data Science</strong> — S.C.E.T
-              (Sarvajanik University), 2022–2026 <br />
-              <span style={{ color: "#aaa" }}>GPA: 9.0</span>
-            </li>
-            <li style={{ marginTop: 8 }}>
-              <strong>12th Board — R.S.M. Poonawala Experimental School</strong> (Gujarat
-              Board, 2022) <br />
-              <span style={{ color: "#aaa" }}>Percentage: 78%</span>
-            </li>
-            <li style={{ marginTop: 8 }}>
-              <strong>10th Board — Ambika Niketan School</strong> (Gujarat Board, 2020)
-              <br />
-              <span style={{ color: "#aaa" }}>Percentage: 85%</span>
-            </li>
+
+          <ul style={{ listStyle: "none", padding: 0, lineHeight: 1.8 }}>
+            <li><strong>Languages:</strong> C++, Python, C, SQL, Java</li>
+            <li><strong>Libraries:</strong> NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn</li>
+            <li><strong>Tools:</strong> MySQL, Git, GitHub, Jupyter Notebook</li>
+            <li><strong>Core:</strong> OOP, OS Concepts, Data Preprocessing, ML Basics</li>
+            <li><strong>Soft Skills:</strong> Problem Solving, Teamwork, Analytical Thinking</li>
           </ul>
         </motion.div>
 
-        {/* Projects */}
+        {/* INTERNSHIP */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
-          style={{ marginTop: 40 }}
+          style={{
+            marginTop: 40,
+          }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>💼 Projects</h4>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
-            <li>1️⃣ Breast Cancer Detection from Mammograms using YOLO & CNN</li>
-            <li>2️⃣ DocuChat: Document Q&A Chatbot (Gemini API)</li>
-            <li>3️⃣ Indian Sign Language Interpreter (In Progress)</li>
-            <li>4️⃣ Mental Health Analyzer</li>
-          </ul>
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
+            💼 Internship
+          </h4>
+
+          <div style={{ lineHeight: 1.8 }}>
+            <strong>Research Engineer Intern — ZEETRON NETWORKS PVT LTD</strong>  
+            <span style={{ color: "#aaa" }}> (June 2025 – July 2025)</span>
+            <ul style={{ marginTop: 8, paddingLeft: 16 }}>
+              <li>Worked on real-time model training, data processing and dashboards.</li>
+              <li>Optimized model accuracy and automated reporting workflows.</li>
+              <li>Integrated Python + SQL data pipelines to reduce preprocessing time.</li>
+              <li>Prepared technical documentation and submitted reports to engineers.</li>
+            </ul>
+          </div>
         </motion.div>
 
-        {/* Skills */}
+        {/* PROJECTS */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1 }}
           style={{ marginTop: 40 }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>⚙️ Skills</h4>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-            {[
-              "Python",
-              "C",
-              "C++",
-              "Java",
-              "TensorFlow",
-              "PyTorch",
-              "Scikit-learn",
-              "OpenCV",
-              "YOLO",
-              "Streamlit",
-              "React",
-              "MySQL",
-              "MongoDB",
-              "Git",
-              "NLP",
-              "Explainable AI (XAI)",
-              "Problem Solving",
-              "Teamwork",
-              "Adaptability",
-              "Creativity",
-            ].map((skill) => (
-              <motion.span
-                key={skill}
-                whileHover={{ scale: 1.1, backgroundColor: "rgba(0,180,255,0.3)" }}
-                style={{
-                  background: "rgba(255,255,255,0.05)",
-                  padding: "6px 12px",
-                  borderRadius: 8,
-                  fontSize: 13,
-                  color: "#ccc",
-                }}
-              >
-                {skill}
-              </motion.span>
-            ))}
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4 }}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: 30,
-            marginTop: 40,
-          }}
-        >
-          {[
-            { name: "🏆 LeetCode", link: "https://leetcode.com/u/Kunj_2803/" },
-            { name: "💻 GitHub", link: "https://github.com/kunj2803" },
-            { name: "💼 LinkedIn", link: "https://www.linkedin.com/in/kunj-desai-07717b293/" },
-          ].map((site) => (
-            <motion.a
-              key={site.name}
-              href={site.link}
-              target="_blank"
-              rel="noreferrer"
-              whileHover={{ scale: 1.1, color: "#00b4ff" }}
-              style={{
-                color: "#ccc",
-                textDecoration: "none",
-                fontSize: 15,
-                fontWeight: 500,
-              }}
-            >
-              {site.name}
-            </motion.a>
-          ))}
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
+            📌 Projects
+          </h4>
+
+          <ul style={{ listStyle: "none", padding: 0, lineHeight: 1.8 }}>
+            <li>
+              <strong>Crime Rate Prediction System (May – July 2025)</strong>
+              <ul style={{ paddingLeft: 16 }}>
+                <li>Forecasted region-wise crime rates using ML models.</li>
+                <li>Performed data cleaning & feature engineering.</li>
+                <li>EDA with Matplotlib & Seaborn.</li>
+                <li>Compared Logistic Regression, Random Forest & XGBoost.</li>
+              </ul>
+            </li>
+
+            <li style={{ marginTop: 16 }}>
+              <strong>IMDB Sentiment Analysis (Jan – March 2025)</strong>
+              <ul style={{ paddingLeft: 16 }}>
+                <li>Built ML model to classify positive/negative reviews.</li>
+                <li>Used TF-IDF + Logistic Regression.</li>
+                <li>Deployed using Streamlit.</li>
+              </ul>
+            </li>
+          </ul>
         </motion.div>
 
-        {/* PDF Viewer */}
+        {/* CERTIFICATIONS */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2 }}
+          style={{ marginTop: 40 }}
+        >
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
+            🎖 Certifications
+          </h4>
+
+          <ul style={{ listStyle: "none", padding: 0, lineHeight: 1.8 }}>
+            <li>FreeCodeCamp Web Development Certification — Aug 2024</li>
+            <li>Google: Bits & Bytes of Computer Networking — Nov 2023</li>
+          </ul>
+        </motion.div>
+
+        {/* ACHIEVEMENTS */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.4 }}
+          style={{ marginTop: 40 }}
+        >
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
+            🏆 Achievements
+          </h4>
+
+          <ul style={{ listStyle: "none", padding: 0, lineHeight: 1.8 }}>
+            <li>Participated in IIIT Delhi Hackathon (Aug 2025)</li>
+            <li>Solved 350+ coding problems (GFG + LeetCode)</li>
+            <li>Volunteered at Coke Studio Event, 2024</li>
+            <li>Top 10% rank in college hackathon, 2024</li>
+          </ul>
+        </motion.div>
+
+        {/* EDUCATION */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.6 }}
+          style={{
+            marginTop: 40,
+            border: "1px solid rgba(255,255,255,0.1)",
+            borderRadius: 12,
+            padding: "20px 24px",
+            background: "rgba(255,255,255,0.03)",
+          }}
+        >
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
+            🎓 Education
+          </h4>
+
+          <ul style={{ listStyle: "none", padding: 0, lineHeight: 1.8 }}>
+            <li>
+              <strong>B.Tech in Computer Science Engineering</strong> — LPU  
+              <br />CGPA: 7.14
+            </li>
+
+            <li style={{ marginTop: 12 }}>
+              <strong>MDS Public School</strong> — Intermediate  
+              <br />Percentage: 70%
+            </li>
+
+            <li style={{ marginTop: 12 }}>
+              <strong>Alpine Vidyapeeth Public School</strong> — Matriculation  
+              <br />Percentage: 93%
+            </li>
+          </ul>
+        </motion.div>
+
+        {/* PDF + Button */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
+          transition={{ delay: 1.8 }}
           style={{
             marginTop: 50,
             borderRadius: 12,
@@ -234,7 +261,7 @@ export default function Resume() {
         >
           <iframe
             src="/resume.pdf"
-            title="Kunj Desai Resume"
+            title="Mohit Resume"
             style={{
               width: "100%",
               height: "650px",
@@ -244,7 +271,6 @@ export default function Resume() {
           />
         </motion.div>
 
-        {/* Download Button */}
         <motion.a
           href="/resume.pdf"
           download
@@ -264,8 +290,6 @@ export default function Resume() {
         >
           ⬇️ Download Resume
         </motion.a>
-
-
       </motion.div>
     </section>
   );
